@@ -1,5 +1,5 @@
-open-mcp (0.1.0-1~ppa1) noble; urgency=medium
+open-mcp (0.1.0+ds-1~ppa4) noble; urgency=medium
 
-  * Initial Launchpad PPA release.
+  * Build from vendored Cargo dependencies for Launchpad.
 
- -- Isaac Hormel <caasilemroh@gmail.com>  Mon, 01 Sep 2026 12:00:00 +0000
+ -- Isaac Hormel <caasilemroh@gmail.com>  Tue, 01 Sep 2026 12:00:00 +0000

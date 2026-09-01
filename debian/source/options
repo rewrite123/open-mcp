@@ -1,2 +1,3 @@
 extend-diff-ignore = "^target/"
 extend-diff-ignore = "^debian/files$"
+extend-diff-ignore = "^debian/open-mcp.substvars$"

@@ -1,0 +1,13 @@
+FROM ubuntu:noble
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends software-properties-common ca-certificates \
+    && add-apt-repository --yes ppa:fossware/open-mcp \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends open-mcp \
+    && omcp --version \
+    && mcp --help \
+    && filesystem-mcp-server --help \
+    && rm -rf /var/lib/apt/lists/*

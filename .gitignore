@@ -1,1 +1,6 @@
 /target
+/debian/.debhelper/
+/debian/files
+/debian/open-mcp/
+/debian/tmp/
+/debian/*.substvars

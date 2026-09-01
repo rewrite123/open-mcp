@@ -2,7 +2,7 @@ Source: open-mcp
 Section: utils
 Priority: optional
 Maintainer: Isaac Hormel <caasilemroh@gmail.com>
-Build-Depends: debhelper-compat (= 13), dh-cargo, cargo, rustc
+Build-Depends: debhelper-compat (= 13), cargo, rustc
 Standards-Version: 4.6.0.1
 Rules-Requires-Root: no
 Homepage: https://github.com/rewrite123/open-mcp

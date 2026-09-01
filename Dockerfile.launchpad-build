@@ -1,0 +1,22 @@
+FROM ubuntu:noble
+
+ENV DEBIAN_FRONTEND=noninteractive
+WORKDIR /build/open-mcp
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        build-essential \
+        cargo \
+        debhelper \
+        dpkg-dev \
+        fakeroot \
+        rustc \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+RUN rm -rf debian/.debhelper debian/open-mcp debian/tmp debian/files debian/open-mcp.substvars \
+    && dpkg-buildpackage -b -uc -us -d \
+    && test -x debian/open-mcp/usr/bin/omcp \
+    && test -x debian/open-mcp/usr/bin/mcp \
+    && test -x debian/open-mcp/usr/bin/filesystem-mcp-server

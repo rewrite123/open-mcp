@@ -1,0 +1,8 @@
+.git
+target
+debian/.debhelper
+debian/open-mcp
+debian/tmp
+debian/files
+debian/*.substvars
+.cargo-config.tmp
