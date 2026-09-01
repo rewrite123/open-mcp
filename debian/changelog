@@ -1,0 +1,5 @@
+open-mcp (0.1.0-1~ppa1) noble; urgency=medium
+
+  * Initial Launchpad PPA release.
+
+ -- Isaac Hormel <caasilemroh@gmail.com>  Mon, 01 Sep 2026 12:00:00 +0000

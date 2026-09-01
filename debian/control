@@ -1,0 +1,15 @@
+Source: open-mcp
+Section: utils
+Priority: optional
+Maintainer: Isaac Hormel <caasilemroh@gmail.com>
+Build-Depends: debhelper-compat (= 13), dh-cargo, cargo, rustc
+Standards-Version: 4.6.0.1
+Rules-Requires-Root: no
+Homepage: https://github.com/rewrite123/open-mcp
+
+Package: open-mcp
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Open MCP client and local MCP servers
+ omcp (open-mcp) is a command-line MCP client supporting HTTP and stdio MCP
+ transports, named MCP hosts, multiple tool namespaces, and local models.
