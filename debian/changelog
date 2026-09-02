@@ -1,5 +1,5 @@
-open-mcp (0.1.0+ds-1~ppa4) noble; urgency=medium
+open-mcp (0.1.0+ds-1~ppa5) noble; urgency=medium
 
-  * Build from vendored Cargo dependencies for Launchpad.
+  * Ship only the omcp and mcp client commands.
 
  -- Isaac Hormel <caasilemroh@gmail.com>  Tue, 01 Sep 2026 12:00:00 +0000

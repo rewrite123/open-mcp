@@ -9,5 +9,4 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends open-mcp \
     && omcp --version \
     && mcp --help \
-    && filesystem-mcp-server --help \
     && rm -rf /var/lib/apt/lists/*

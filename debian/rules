@@ -14,6 +14,3 @@ override_dh_auto_build:
 override_dh_auto_install:
 	install -D -m 0755 target/release/omcp debian/open-mcp/usr/bin/omcp
 	install -D -m 0755 target/release/mcp debian/open-mcp/usr/bin/mcp
-	install -D -m 0755 target/release/filesystem-mcp-server debian/open-mcp/usr/bin/filesystem-mcp-server
-	install -D -m 0755 target/release/mock-mcp-server debian/open-mcp/usr/bin/mock-mcp-server
-	install -D -m 0755 target/release/stdio-mock-mcp-server debian/open-mcp/usr/bin/stdio-mock-mcp-server

@@ -25,9 +25,6 @@ The package installs these commands under `/usr/bin`:
 ```text
 omcp
 mcp
-filesystem-mcp-server
-mock-mcp-server
-stdio-mock-mcp-server
 ```
 
 ## Build

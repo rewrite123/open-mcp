@@ -19,4 +19,4 @@ RUN rm -rf debian/.debhelper debian/open-mcp debian/tmp debian/files debian/open
     && dpkg-buildpackage -b -uc -us -d \
     && test -x debian/open-mcp/usr/bin/omcp \
     && test -x debian/open-mcp/usr/bin/mcp \
-    && test -x debian/open-mcp/usr/bin/filesystem-mcp-server
+    && test ! -e debian/open-mcp/usr/bin/filesystem-mcp-server
