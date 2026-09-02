@@ -2,6 +2,34 @@
 
 `omcp` (open-mcp) is a CLI MCP client that connects one model endpoint to one or more MCP servers. It supports HTTP Streamable MCP servers and JSON-lines stdio MCP servers.
 
+## Install From Launchpad
+
+The `fossware/open-mcp` PPA currently publishes packages for Ubuntu Noble (24.04). Add the PPA, refresh apt metadata, and install the package:
+
+```bash
+sudo add-apt-repository ppa:fossware/open-mcp
+sudo apt update
+sudo apt install open-mcp
+```
+
+Verify the installation:
+
+```bash
+omcp --version
+mcp --help
+filesystem-mcp-server --help
+```
+
+The package installs these commands under `/usr/bin`:
+
+```text
+omcp
+mcp
+filesystem-mcp-server
+mock-mcp-server
+stdio-mock-mcp-server
+```
+
 ## Build
 
 The project targets Rust 1.75, matching the supported Ubuntu Launchpad toolchain.
